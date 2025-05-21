@@ -12,3 +12,27 @@ fig = px.bar(
     title="Gráfico de barras",
 )
 st.plotly_chart(fig)
+
+st.write("Este es un gráfico de cajas.")
+fig = px.box(
+    x=["A", "B", "C"],
+    y=[1, 2, 3],
+    title="Gráfico de cajas",
+)
+st.plotly_chart(fig)
+
+st.write("Este es un gráfico de lineas.")
+fig = px.line(
+    x=["A", "B", "C"],
+    y=[1, 2, 3],
+    title="Gráfico de líneas",
+)
+st.plotly_chart(fig)
+
+st.write("Este es un gráfico de dispersión.")
+fig = px.scatter(
+    x=["A", "B", "C"],
+    y=[1, 2, 3],
+    title="Gráfico de dispersión",
+)
+st.plotly_chart(fig)
